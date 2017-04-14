@@ -1,0 +1,8 @@
+spring boot demo项目
+1:支持tomcat内置启动/外部tomcat部署
+切换需要修改pom.xml中内置tomcat依赖移除,添加外部tomcat依赖支持
+修改启动类: 外部tomcat启动需要实现SpringBootServletInitializer 并重写configure 方法
+
+2:支持maven 多环境打包,包含指定环境配置文件,maven命令:clean package -Dmaven.test.skip=true -P dev
+
+3:支持动态修改log级别
